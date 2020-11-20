@@ -1,0 +1,127 @@
+/* Styling Footer 
+---------------------------------------------------------- */
+
+#wb_aphelion_footer_content_wrap {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	background: $footer-background;
+	margin-bottom: -1.5em;
+}
+
+#wb_aphelion_footer_wrap { 
+	width: 100%; 
+	height: auto; 
+	display: block; 
+	position: relative; 
+	background: $footer-background;
+	background-position: center;
+	margin: 0 0 -5px 0; 
+	padding: 80px 0px 60px 0px;
+	overflow: hidden;
+	letter-spacing: 0.8px;
+}
+
+#wb_aphelion_footer_inner_wrap {
+	max-width: $theme-default-width;
+	margin: 0 auto;
+}
+
+#wb_aphelion_copyright p {
+	text-align: center;
+	margin: 0;
+}
+
+#wb_aphelion_footer_wrap .wb-aphelion-col-md-3 a:link, #wb_aphelion_footer_wrap .wb-aphelion-col-md-4 a:link, #wb_aphelion_footer_wrap .wb-aphelion-col-md-6 a:link, #wb_aphelion_footer_wrap .wb-aphelion-col-md-3 a:visited, #wb_aphelion_footer_wrap .wb-aphelion-col-md-4 a:visited, #wb_aphelion_footer_wrap .wb-aphelion-col-md-6 a:visited { 
+	color: $secondary-color; 
+}
+
+#wb_aphelion_footer_wrap .wb-aphelion-col-md-3 a:hover, #wb_aphelion_footer_wrap .wb-aphelion-col-md-4 a:hover, #wb_aphelion_footer_wrap .wb-aphelion-col-md-6 a:hover { 
+	color: $secondary-color; 
+}
+
+#wb_aphelion_footer_wrap .widget_recent_entries ul li  span.post-date {
+	color: $quaternary-color;
+}
+
+#wb_aphelion_copyright { 
+	width: 100%; 
+	height: auto; 
+	position: relative; 
+	background: $footer-background; 
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	padding: 20px 0px;
+	color: $secondary-color;
+	letter-spacing: 0.8px;
+	display: block;
+}
+
+.wb_aphelion_footer_inner_wrap {
+	max-width: $theme-default-width;
+	margin: 0 auto;
+}
+
+.wb_aphelion_footer_item_bottom_left, #wb_aphelion_copyright a:link, #wb_aphelion_copyright a:hover, #wb_aphelion_copyright a:visited { 
+	color: $secondary-color;
+}
+
+#wb_aphelion_footer_wrap .widget ul {
+	padding: 0px;
+}
+
+#wb_aphelion_footer_wrap .widget_recent_entries li:before, #wb_aphelion_footer_wrap #recentcomments li:before {
+	content: '\25b8';
+}
+
+#wb_aphelion_footer_wrap .product_list_widget li a {
+	font-weight: 400;
+}
+
+#wb_aphelion_footer_wrap .widget .zframe-flickr-wrap-ltr {
+	padding: 0px;
+}
+
+.wb_aphelion_footer_item_bottom_left {
+	margin-top: 2px;
+}
+
+.wb_aphelion_footer_item_bottom_right {
+	margin-top: 2px;
+	text-align: right;
+	color: $footer-color;
+}
+
+/* Footer Text Widget 
+---------------------------------------------------------- */
+#wb_aphelion_footer_content_wrap {
+	.widget-title { 
+		color: $footer-color; 
+		font-family: $h1-font-family;
+		font-size: 16px;
+		text-transform: uppercase; 
+		margin-bottom: 15px;
+	}
+	
+	.widget li { 
+		font-size: 15px;
+		line-height: 25px; 
+		color: $footer-color; 
+	}
+	
+	.textwidget p { 
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px; 
+		color: $footer-color; 
+	}
+	
+	.widget {
+		margin: 0 0 30px 0px;
+	}
+	
+	.wb_aphelion_footer_template_wrap {
+		margin-top: 140px;
+	}
+}

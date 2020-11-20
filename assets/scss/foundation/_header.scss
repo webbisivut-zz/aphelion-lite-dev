@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Top header
+--------------------------------------------------------------*/
+#aphelion_top_header_outer_wrap {
+    .aphelion_top_header_inner_wrap {
+        width: 100%;
+        height: 50px;
+        max-width: $theme-default-width;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .aphelion_top_header_content {
+        display: flex;
+        flex: 1 1 50%;
+        align-items: center;
+    }
+
+    #aphelion_top_header_left {
+        justify-content: flex-start;
+    }
+
+    #aphelion_top_header_right {
+        justify-content: flex-end;
+    }
+
+    p,
+    .widget {
+        margin: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Main header
+--------------------------------------------------------------*/
+#aphelion_header_placeholder {
+    height: 100px;
+}
+
+#aphelion_header {
+    width: 100%;
+    height: 100px;
+    background: $header_background;
+    display: flex;
+    align-items: center;
+    
+    .aphelion_header_inner_wrapper {
+        width: 100%;
+        max-width: $theme-default-width;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+#aphelion_header_left {
+    display: flex;
+    flex: 1 1 30%;
+    align-items: center;
+}
+
+#aphelion_header_left img {
+    width: 100%;
+    height: auto;
+    max-width: $logo_width;
+}
+
+#aphelion_header_right {
+    display: flex;
+    flex: 2 1 70%;
+    align-items: center;
+    justify-content: flex-end;
+}

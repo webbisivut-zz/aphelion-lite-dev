@@ -1,0 +1,55 @@
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+
+$theme-default-width: 1366px;
+$logo_width: 200px;
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+/* Default colors */ 
+$primary-color: #8acc1b;
+$secondary-color: #f6f5f5;
+$ternary-color: #ffffff;
+$quaternary-color: #616161;
+$quinary-color: #222222;
+
+$default-link: #8acc1b;
+$hover-link: #8acc1b;
+$visited-link: #8acc1b;
+$active-link: #8acc1b;
+
+$menu-main-color: #222222;
+$menu-background-color: #ffffff;
+$menu-hover-background-color: #8acc1b;
+
+$header_background: #ffffff;
+
+$footer-background: #222222;
+$footer-color: #ffffff;
+
+/* Fonts */
+$primary-text-color: #222222;
+
+/* Headings */
+$heading-color-h1: #333333;
+$heading-color-h2: #444444;
+$heading-color-h3: #333333;
+$heading-color-h4: #8acc1b;
+$heading-color-h5: #8acc1b;
+$heading-color-h6: #222222;
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+$default-font-family: "PTSans-Regular", "Sans-Serif", "Arial";
+$h1-font-family: "Montserrat-ExtraBold", "Poppins-Light", "SourceSansPro-Regular", "Sans-Serif";
+$h2-font-family: "Montserrat-Medium", "Sans-Serif", "Arial";
+$h3-font-family: "SourceSansPro-Regular", "Sans-Serif", "Arial";
+$h4-font-family: "NunitoSans-Light", "SourceSansPro-Regular", "Sans-Serif";
+$h5-font-family: "SourceSansPro-Regular", "Sans-Serif", "Arial";
+$h6-font-family: "SourceSansPro-Regular", "Sans-Serif", "Arial";

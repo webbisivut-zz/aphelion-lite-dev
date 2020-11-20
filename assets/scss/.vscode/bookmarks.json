@@ -1,0 +1,47 @@
+[
+	{
+		"path": "/var/www/html/aphelion/wp-content/themes/aphelion/inc/css/dynamic-css.php",
+		"bookmarks": [
+			{
+				"line": 1032,
+				"column": 5,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/foundation/_mobilemenu.scss",
+		"bookmarks": [
+			{
+				"line": 65,
+				"column": 17,
+				"label": ""
+			},
+			{
+				"line": 160,
+				"column": 35,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "/var/www/html/snellman/wp-content/themes/aphelion/inc/css/dynamic-css.php",
+		"bookmarks": [
+			{
+				"line": 437,
+				"column": 29,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "/var/www/html/aphelion/wp-content/themes/aphelion-dev/inc/css/dynamic-css.php",
+		"bookmarks": [
+			{
+				"line": 710,
+				"column": 4,
+				"label": ""
+			}
+		]
+	}
+]
