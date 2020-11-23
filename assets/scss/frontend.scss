@@ -10,9 +10,12 @@
 @include loadfont('NunitoSans-Light');
 
 @import 'partials/variables';
+@import 'foundation/stickyheader';
 @import 'foundation/header';
 @import 'foundation/mainmenu';
 @import 'foundation/content';
+@import 'foundation/blog';
+@import 'foundation/widgets';
 @import 'foundation/mobilemenu';
 @import 'foundation/footer';
 @import 'foundation/responsive';
@@ -568,17 +571,20 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: $default-link;
 }
 
 a:visited {
-	color: #800080;
+	color: $visited-link;
 }
 
 a:hover,
-a:focus,
+a:focus {
+	color: $hover-link;
+}
+
 a:active {
-	color: #191970;
+	color: $active-link;
 }
 
 a:focus {
@@ -588,6 +594,21 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
+}
+
+.entry-title {
+	a {
+		color: $default-link;
+		text-decoration: none;
+	}
+	
+	a,
+	a:visited,
+	a:hover,
+	a:focus,
+	a:active {
+		color: $primary-text-color;
+	}
 }
 
 /* Forms

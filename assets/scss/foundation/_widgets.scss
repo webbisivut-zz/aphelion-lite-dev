@@ -1,0 +1,261 @@
+/* Sidebar Widgets
+-------------------------------------------------------------- */
+.elementor-widget-container,
+.widget-area {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wb_aphelion_overlay-container-item h3.widget-title,
+.elementor-widget-container h3.widget-title,
+.widget-area h3.widget-title { 
+	background: $primary-color;
+	color: $ternary-color;
+	padding: 20px;
+}
+
+.wb_aphelion_overlay-navigation-wrap {
+	color: $ternary-color;
+}
+
+.wb_aphelion_overlay-navigation-wrap input {
+	color: $primary-text-color;
+	border-radius: 0px;
+}
+
+.wb_aphelion_overlay-container-item h3.widget-title a,
+.elementor-widget-container h3.widget-title a,
+.widget-area h3.widget-title a { 
+	color: $ternary-color;
+}
+
+.elementor-widget-container .widget,
+.widget-area .widget {
+	margin: 0 0 20px 0;
+}
+
+.wb_aphelion_overlay-container-item .woocommerce-product-search,
+.wb_aphelion_overlay-container-item .textwidget,
+.wb_aphelion_overlay-container-item .textwidget,
+.wb_aphelion_overlay-container-item #calendar_wrap,
+.wb_aphelion_overlay-container-item .searchform,
+.wb_aphelion_overlay-container-itemul,
+.elementor-widget-container .woocommerce-product-search,
+.elementor-widget-container .textwidget,
+.elementor-widget-container #calendar_wrap,
+.elementor-widget-container .searchform,
+.widget-area .woocommerce-product-search,
+.widget-area .textwidget,
+.widget-area #calendar_wrap,
+.widget-area .searchform,
+.widget-area ul  {
+	background: $secondary-color;
+	padding: 20px;
+	margin-top: 0px;
+}
+
+.elementor-widget-container .widget_recent_entries ul,
+.widget-area .widget_recent_entries ul{
+	margin: 0px;
+	padding-left: 45px;
+}
+
+.elementor-widget-container .woocommerce-product-search input[type=search],
+.elementor-widget-container .searchform input[type=text],
+.widget-area .woocommerce-product-search input[type=search],
+.widget-area .search-field,
+.widget-area .searchform input[type=text] {
+	border: 1px solid $primary-color;
+	width: 100%;
+	margin: 0 0 5px 0;
+	padding: 5px;
+}
+
+.elementor-widget-container .woocommerce-product-search button,
+.elementor-widget-container #searchsubmit,
+.widget-area .woocommerce-product-search button,
+.widget-area .search-submit,
+.widget-area #searchsubmit {
+	background: $primary-color;
+	color: $ternary-color;
+	width: 100%;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px 15px;
+}
+
+.elementor-widget-container ul li,
+.widget-area ul li {
+	padding: 0 0 5px 0;
+}
+
+/* WooCommerce Widgets
+-------------------------------------------------------------- */
+.woocommerce .woocommerce-widget-layered-nav-list,
+.woocommerce ul.cart_list, .woocommerce ul.product_list_widget,
+.woocommerce .widget_rating_filter ul,
+.elementor-widget-container .price_slider_wb_aphelion_wrapper,
+.elementor-widget-container .wb_aphelion_widget_shopping_cart_content,
+.widget-area .price_slider_wb_aphelion_wrapper,
+.widget-area .wb_aphelion_widget_shopping_cart_content {
+	background: $secondary-color;
+	padding: 20px;
+	margin-top: 0px;
+}
+
+.elementor-widget-container p.woocommerce-mini-cart__total,
+.widget-area p.woocommerce-mini-cart__total {
+ 	margin: 20px 0px;
+ 	padding: 20px 0px;
+}
+
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce .widget_shopping_cart .buttons a, .woocommerce.widget_shopping_cart .buttons a {
+	background: $primary-color;
+	color: $ternary-color;
+	font-weight: 200;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range {
+	background: $primary-color;
+}
+
+.woocommerce .widget_price_filter .ui-slider {
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item a::before {
+	content: '» ';
+}
+
+.woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item .count {
+	color: $quaternary-color;
+	font-size: 13px;
+}
+
+.wb_aphelion_overlay-container-item .product_list_widget {
+	background: transparent !important;
+	padding: 10px 0px !important;
+}
+
+.wb_aphelion_overlay-navigation-wrap button {
+	background: $primary-color;
+	color: $ternary-color;
+	font-weight: 200;
+	padding: 5px 15px;
+	border: 0px;
+}
+
+/* Comments
+----------------------------------------------- */
+
+.widget .widget_recent_comments,
+.wb_aphelion_overlay-container-item .recentcomments,
+.wb_aphelion_overlay-container-item .widget_recent_comments {
+	color: $ternary-color;
+}
+
+/* Gallery
+----------------------------------------------- */
+.elementor-widget-container .gallery,
+.widget-area .gallery {
+	margin-top: 0px !important;
+}
+
+.gallery-item {
+	margin: 0px;
+}
+
+.gallery-item img {
+	border: 0px !important;
+	outline: 0px;
+	padding: 5px;
+}
+
+
+/* Calendar
+----------------------------------------------- */
+
+.wb_aphelion_overlay-container-item #wp-calendar,
+.elementor-widget-container #wp-calendar,
+.widget-area #wp-calendar {
+	width: 100%;
+}
+
+.wb_aphelion_overlay-container-item #wp-calendar caption,
+.elementor-widget-container #wp-calendar caption,
+.widget-area #wp-calendar caption {
+	background: $primary-color;
+	color: $ternary-color;
+	padding: 20px;
+	margin: 0 0 10px 0;
+}
+
+.wb_aphelion_overlay-container-item #wp-calendar th,
+.elementor-widget-container #wp-calendar th,
+.widget-area #wp-calendar th {
+	background: $primary-color;
+	color: $ternary-color;
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+.wb_aphelion_overlay-container-item #wp-calendar td,
+.elementor-widget-container #wp-calendar td,
+.widget-area #wp-calendar td {
+	background: $ternary-color;
+	color: $primary-text-color;
+	margin: 0 0 10px 0;
+	text-align: center;
+	border: 1px solid $quaternary-color;
+}
+
+.wb_aphelion_overlay-container-item #wp-calendar td, 
+.elementor-widget-container #wp-calendar td,
+.widget-area #wp-calendar td {
+	color: $primary-text-color !important;
+}
+
+.wb_aphelion_overlay-container-item .widget-title {
+	margin-bottom: 10px;
+}
+
+.wb_aphelion_overlay-container-item .widget {
+	margin: 0px 0px 20px 0px;
+}
+
+
+
+/* Menu
+----------------------------------------------- */
+
+.elementor-widget-container .menu li a,
+.widget-area .menu li a {
+	color: $primary-color;
+	padding: 5px;
+	display: block;
+	list-style-type: none;
+}
+
+.elementor-widget-container ul.product-categories,
+.widget-area ul.product-categories {
+	padding: 0px;
+}
+
+.elementor-widget-container li.cat-item,
+.widget-area li.cat-item {
+	list-style-type: none;
+	margin: 0px;
+	padding: 14px;
+	border-bottom: 1px solid $quaternary-color;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.elementor-widget-container .menu .sub-menu,
+.widget-area .menu .sub-menu {
+	margin: 0px;
+	padding: 0 0 0 10px;
+}

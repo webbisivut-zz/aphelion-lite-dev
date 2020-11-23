@@ -1,8 +1,39 @@
+@media(min-width: $mobile_breakpoint) {
+    /* Hide mobile menu on desktop
+    ---------------------------------------------------------- */
+    #aphelion_mobile_menu_wrapper,
+    #aphelion_mobile_menu_wrapper_sticky {
+        display: none;
+    }
+}
+
 @media(max-width: $mobile_breakpoint) {
-    
+    /* Sticky Header
+    ---------------------------------------------------------- */
+    #wb_aphelion_sticky-header {
+        top: 0px;
+    }
+
+    .wb_aphelion_hamburger-box {
+        margin-right: 15px;
+    }
+
+    /* Top Header
+    ---------------------------------------------------------- */
+    #aphelion_top_header_outer_wrap {
+        padding: 0 15px;
+    }
+
+    /* Header
+    ---------------------------------------------------------- */
+    #aphelion_header {
+        padding: 0 15px;
+    }
+
     /* Overlay
     ---------------------------------------------------------- */
-    #trigger-wb_aphelion_overlay {
+    #trigger-wb_aphelion_overlay,
+    #trigger-wb_aphelion_overlay_sticky {
         display: block;
     }
     
@@ -25,5 +56,29 @@
     .aphelion_woocommerce_quick_watch_inner_wrap,
     .aphelion_woocommerce_quick_watch_inner_wrap .product {
         width: 100%;
+    }
+
+    /* Desktop menu
+    ---------------------------------------------------------- */
+    #aphelion_desktop_menu_wrapper {
+        display: none;
+    }
+
+    /* Footer
+    ---------------------------------------------------------- */
+    #wb_aphelion_footer_content_wrap {
+        text-align: center;
+    }
+}
+
+@media(max-width: $mobile_sm_breakpoint) {
+    /* Logo and menu
+    ---------------------------------------------------------- */
+    #aphelion_header_left {
+        flex: 1 1 50%;
+    }   
+    
+    #aphelion_header_right {
+        flex: 1 1 50%;
     }
 }

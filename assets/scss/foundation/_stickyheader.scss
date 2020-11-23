@@ -1,0 +1,69 @@
+
+/*--------------------------------------------------------------
+# Sticky header
+--------------------------------------------------------------*/
+#wb_aphelion_sticky-header {
+	width: 100%;
+	position: fixed;
+	background: $sticky_header_background;
+	z-index: 99999;
+	border-bottom: 0px;
+	display: none;
+	height: 50px;
+	justify-content: flex-start;
+	padding: 0 15px;
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	-o-transition: opacity .5s ease;
+	box-shadow: 0 4px 12px -8px rgb(163, 163, 163);
+}
+
+#wb_aphelion_sticky-header {
+	.wb_aphelion_sticky-header .main-navigation li a {
+		line-height: 2.7;
+	}
+
+	.wb_aphelion_sticky-header .main-navigation li ul li a {
+		margin-top: -1px;
+		line-height: 2;
+	}
+
+	.wb_aphelion_sticky-header .main-navigation li ul li:first-child {
+		margin-top: 3px;
+	}
+
+	.wb_aphelion_sticky_menu_wrappper {
+		position: relative;
+		float: right;
+	}
+	#aphelion_header_left img {
+		width: 100%;
+		height: auto;
+		max-width: $sticky_logo_width;
+	}
+
+	.wb_aphelion_sticky-header .sub-menu { 
+		padding-top: 0px !important;
+		margin-top: 0px !important;
+	}
+				
+	.wb_aphelion_sticky-header .sub-menu .sub-menu {
+		padding-top: 0px !important;
+		margin-top: -3px !important;
+	}
+
+	.header-container, .header-container-relative {
+		position: relative; 
+		width: auto;
+	}
+}
+
+#aphelion_header_inner_wrapper_sticky {
+	display: flex;
+	width: 100%;
+	max-width: $theme-header-width;
+	margin: 0 auto;
+}

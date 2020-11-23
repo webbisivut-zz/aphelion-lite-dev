@@ -113,6 +113,70 @@ function aphelion_lite_content_width() {
 }
 add_action( 'after_setup_theme', 'aphelion_lite_content_width', 0 );
 
+if ( ! function_exists( 'aphelion_comment' ) ) {
+	/**
+	 * Template for comments and pingbacks.
+	 *
+	 * To override this walker in a child theme without modifying the comments template
+	 * simply create your own aphelion_comment(), and that function will be used instead.
+	 *
+	 * Used as a callback by wp_list_comments() for displaying the comments.
+	 *
+	 * --------------------------
+	 */
+	function aphelion_comment( $comment, $args, $depth ) {
+		$GLOBALS['comment'] = $comment;
+		switch ( $comment->comment_type ) :
+			case 'pingback' :
+			case 'trackback' :
+			// Display trackbacks differently than normal comments.
+		?>
+		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+			<p><?php _e( 'Pingback:', 'aphelion' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( _e( '(Edit)', 'aphelion' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<?php
+				break;
+			default :
+			// Proceed with normal comments.
+			global $post;
+		?>
+		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+			<article id="comment-<?php comment_ID(); ?>" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<?php
+						echo get_avatar( $comment, 44 );
+						printf( '<cite class="fn">%1$s %2$s</cite>',
+							get_comment_author_link(),
+							// If current post author is also comment author, make it known visually.
+							( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'aphelion' ) . '</span>' : ''
+						);
+						printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+							esc_url( get_comment_link( $comment->comment_ID ) ),
+							get_comment_time( 'c' ),
+							/* translators: 1: date, 2: time */
+							sprintf( __( '%1$s at %2$s', 'aphelion' ), get_comment_date(), get_comment_time() )
+						);
+					?>
+				</header><!-- .comment-meta -->
+	
+				<?php if ( '0' == $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'aphelion' ); ?></p>
+				<?php endif; ?>
+	
+				<section class="comment-content comment">
+					<?php comment_text(); ?>
+					<?php edit_comment_link( _e( 'Edit', 'aphelion' ), '<p class="edit-link">', '</p>' ); ?>
+				</section><!-- .comment-content -->
+	
+				<div class="reply">
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => _e( 'Reply', 'aphelion' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		<?php
+			break;
+		endswitch; // end comment_type check
+	}
+}
+
 /**
  * Register widget area.
  *
@@ -126,8 +190,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -138,8 +202,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -150,8 +214,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -162,8 +226,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -174,8 +238,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -186,8 +250,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -198,8 +262,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -210,8 +274,8 @@ function aphelion_lite_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }
@@ -228,9 +292,10 @@ function aphelion_lite_scripts() {
 
 	wp_enqueue_script( 'modernizr-custom-js', get_template_directory_uri() . '/assets/js/modernizr.custom.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/assets/js/classie.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'aphelion-lite-default-js', get_template_directory_uri() . '/assets/js/defaults.min.js', array(), _S_VERSION, true );
 
 	if(_SHOW_STICKY_HEADER) {
-		wp_enqueue_script( 'aphelion-lite-default-js', get_template_directory_uri() . '/assets/js/defaults.min.js', array(), _S_VERSION, true );	
+		wp_enqueue_script( 'aphelion-lite-sticky-js', get_template_directory_uri() . '/assets/js/sticky-header.min.js', array(), _S_VERSION, true );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -1,8 +1,9 @@
 jQuery(document).ready(function($) {
     
-    (function aphelion_activation_frontend() {
+    function aphelion_activation_frontend() {
         // Mobile menu
         let triggerBttn = document.getElementById( 'trigger-wb_aphelion_overlay' ),
+        triggerBttnSticky = document.getElementById( 'trigger-wb_aphelion_overlay_sticky' ),
         wb_aphelion_overlay = document.querySelector( 'div.wb_aphelion_overlay' ),
         closeBttn = wb_aphelion_overlay.querySelector( '#wb_aphelion_overlay-close' );
         transEndEventNames = {
@@ -15,9 +16,13 @@ jQuery(document).ready(function($) {
         transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
         support = { transitions : Modernizr.csstransitions };
         
-        
         if(triggerBttn != null && typeof triggerBttn != 'undefined') {
             triggerBttn.addEventListener( 'click', function() {
+                wb_aphelion_toggleOverlay(true);
+            });
+        }    
+        if(triggerBttnSticky != null && typeof triggerBttnSticky != 'undefined') {
+            triggerBttnSticky.addEventListener( 'click', function() {
                 wb_aphelion_toggleOverlay(true);
             });
         }
@@ -42,7 +47,9 @@ jQuery(document).ready(function($) {
         }
         
         aphelion_generate_submenus();
-    }());
+    };
+
+    aphelion_activation_frontend();
 
     function wb_aphelion_toggleOverlay(openOrClosed = false) {
         let wb_aphelion_overlayContent = document.getElementById('wb_aphelion_overlay_menu_is_open');

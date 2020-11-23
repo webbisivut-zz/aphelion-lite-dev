@@ -2,6 +2,8 @@
 # Top header
 --------------------------------------------------------------*/
 #aphelion_top_header_outer_wrap {
+    background: $top_header_background;
+
     .aphelion_top_header_inner_wrap {
         width: 100%;
         height: 50px;
@@ -46,7 +48,7 @@
     
     .aphelion_header_inner_wrapper {
         width: 100%;
-        max-width: $theme-default-width;
+        max-width: $theme-header-width;
         margin: 0 auto;
         display: flex;
     }
@@ -58,10 +60,19 @@
     align-items: center;
 }
 
+#aphelion_header_left a {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    line-height: 0;
+}
+
 #aphelion_header_left img {
     width: 100%;
     height: auto;
     max-width: $logo_width;
+    padding: 0px;
+    margin: 0px;
 }
 
 #aphelion_header_right {
