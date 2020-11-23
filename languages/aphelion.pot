@@ -1,0 +1,370 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Aphelion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-29 09:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.3; wp-5.4"
+
+#: index.php:54
+msgid "No posts to display"
+msgstr ""
+
+#: index.php:57
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: index.php:63
+msgid "Nothing Found"
+msgstr ""
+
+#: index.php:66
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: index.php:84 category.php:58 archive.php:68 tag.php:67 author.php:66
+#: author.php:102
+msgid "Previous"
+msgstr ""
+
+#: index.php:85 category.php:59 archive.php:69 tag.php:68 author.php:67
+#: author.php:103
+msgid "Next"
+msgstr ""
+
+#: comments.php:23
+#, php-format
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:32
+msgid "Comments navigation"
+msgstr ""
+
+#: comments.php:33
+msgid "&larr; Older comments"
+msgstr ""
+
+#: comments.php:34
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:13
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:43
+msgid "Menu"
+msgstr ""
+
+#: footer.php:67
+msgid "Categories"
+msgstr ""
+
+#: footer.php:78 header.php:92
+msgid "Search"
+msgstr ""
+
+#: footer.php:87 header.php:97
+msgid "Cart"
+msgstr ""
+
+#: footer.php:98
+msgid "Languages"
+msgstr ""
+
+#: footer.php:109
+msgid "Custom"
+msgstr ""
+
+#: search.php:16
+msgid "Search results"
+msgstr ""
+
+#: search.php:18 content-none.php:12
+msgid "No results"
+msgstr ""
+
+#: search.php:61
+msgid "No search results"
+msgstr ""
+
+#: search.php:62
+msgid ""
+"Unfortunately we could not find what you were looking for. Please try to "
+"search with different keywords:"
+msgstr ""
+
+#: functions.php:59
+msgid "Primary Menu"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own language.
+#: functions.php:250
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr ""
+
+#. To add an additional Source Sans Pro character subset specific to your language, translate
+#. this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your own language.
+#: functions.php:255
+msgctxt "Source Sans Pro font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:299
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:301
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr ""
+
+#: functions.php:309
+msgid "Custom mobile menu widgets"
+msgstr ""
+
+#: functions.php:319
+msgid "Woocommerce"
+msgstr ""
+
+#: functions.php:321
+msgid "Sidebar for Woocommerce shop"
+msgstr ""
+
+#: functions.php:329
+msgid "Minicart"
+msgstr ""
+
+#: functions.php:331
+msgid "Minicart Widget. Requires widget to be installed."
+msgstr ""
+
+#: functions.php:339
+msgid "Top Header Area, Left Side"
+msgstr ""
+
+#: functions.php:341
+msgid "Content for the Left Side of the Top Header Area."
+msgstr ""
+
+#: functions.php:349
+msgid "Top Header Area, Right Side Area One"
+msgstr ""
+
+#: functions.php:351
+msgid "Content for the Right Side Area One of the Top Header Area."
+msgstr ""
+
+#: functions.php:359
+msgid "Top Header Area, Right Side Area Two"
+msgstr ""
+
+#: functions.php:361
+msgid "Content for the Right Side Area Two of the Top Header Area."
+msgstr ""
+
+#: functions.php:409
+msgid "First of the Footer Areas"
+msgstr ""
+
+#: functions.php:411 functions.php:421 functions.php:431 functions.php:441
+msgid "Use this to place widgets on your footer."
+msgstr ""
+
+#: functions.php:419
+msgid "Second of the Footer Areas"
+msgstr ""
+
+#: functions.php:429
+msgid "Third of the Footer Areas"
+msgstr ""
+
+#: functions.php:439
+msgid "Fourth of the Footer Areas"
+msgstr ""
+
+#: functions.php:449
+msgid "Bottom Footer Area, Right Side"
+msgstr ""
+
+#: functions.php:451
+msgid "Right side of the Bottom Footer Area"
+msgstr ""
+
+#: functions.php:499
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:499
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:514
+msgid "Post author"
+msgstr ""
+
+#. 1: date, 2: time
+#: functions.php:520
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:526
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:531
+msgid "Edit"
+msgstr ""
+
+#: functions.php:535
+msgid "Reply"
+msgstr ""
+
+#. used between list items, there is a space after the comma.
+#: functions.php:567
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#. 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
+#: functions.php:573
+#, php-format
+msgid ""
+"Published %1$s by tag %2$s, %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:575
+#, php-format
+msgid "Published %1$s, %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:577
+#, php-format
+msgid "Published %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:658
+msgid "Archive category: "
+msgstr ""
+
+#: functions.php:661
+msgid "Search results: "
+msgstr ""
+
+#: functions.php:721
+msgid "Articles with tag name: "
+msgstr ""
+
+#: functions.php:726
+msgid "Articles published by: "
+msgstr ""
+
+#: functions.php:729
+msgid "Virhe 404"
+msgstr ""
+
+#: functions.php:1106
+msgid "View Product"
+msgstr ""
+
+#: functions.php:1121
+msgid "Buy Now"
+msgstr ""
+
+#: functions.php:1337
+msgid "Please enter your search query here..."
+msgstr ""
+
+#: 404.php:16 404.php:38
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:39
+msgid ""
+"Unofortunately we could not find what you were looking for. Please try to "
+"use search:"
+msgstr ""
+
+#: author.php:47
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: author.php:79
+#, php-format
+msgid "Author info %s"
+msgstr ""
+
+#: content-none.php:15
+msgid ""
+"Unfortunately we could not find what you were searching for. Try to search "
+"with different keywords:"
+msgstr ""
+
+#. Name of the template
+msgid "Wrapped Layout"
+msgstr ""
+
+#: inc/theme-partials/blog/grid.php:47 inc/theme-partials/blog/full.php:22
+msgid "Read more"
+msgstr ""
+
+#: inc/theme-partials/blog/grid.php:55 inc/theme-partials/blog/full.php:29
+msgid "0"
+msgstr ""
+
+#: inc/theme-partials/blog/grid.php:55 inc/theme-partials/blog/full.php:29
+msgid "1"
+msgstr ""
+
+#: inc/theme-partials/blog/grid.php:55 inc/theme-partials/blog/full.php:29
+msgid "%"
+msgstr ""
+
+#: inc/customizer-custom-controls/inc/custom-controls.php:378
+msgid "Add"
+msgstr ""
+
+#: inc/customizer-custom-controls/inc/custom-controls.php:710
+msgid "Select weight & style for regular text"
+msgstr ""
+
+#. Name of the theme
+msgid "Aphelion"
+msgstr ""
+
+#. Description of the theme
+msgid "Aphelion WordPress Theme."
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://web-data.online/"
+msgstr ""
+
+#. Author of the theme
+msgid "Web-Data.Online"
+msgstr ""

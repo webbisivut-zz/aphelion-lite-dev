@@ -1,0 +1,406 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Aphelion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-24 04:15+0000\n"
+"PO-Revision-Date: 2020-06-24 04:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: Suomi\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: index.php:31
+msgid "No posts to display"
+msgstr "Ei artikkeleita"
+
+#: index.php:34
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+"Oletko valmis julkaisemaan esimmäisen artikkelin? <a href=\"%s\">Aloita "
+"täältä</a>."
+
+#: index.php:40
+msgid "Nothing Found"
+msgstr "Ei löytynyt"
+
+#: index.php:43
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr "Valitettavasti emme löytäneet hakemaasi. Kokeile hakua."
+
+#: index.php:69 category.php:39 archive.php:49 tag.php:48 author.php:47
+#: author.php:83
+msgid "Previous"
+msgstr "Edellinen"
+
+#: index.php:70 category.php:40 archive.php:50 tag.php:49 author.php:48
+#: author.php:84
+msgid "Next"
+msgstr "Seuraava"
+
+#: comments.php:23
+#, php-format
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments &ldquo;%2$s&rdquo;"
+msgstr[0] "Yksi kommentti julkaisussa &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommenttia julkaisussa &ldquo;%2$s&rdquo;"
+
+#: comments.php:32
+msgid "Comments navigation"
+msgstr "Kommenttinavigointi"
+
+#: comments.php:33
+msgid "&larr; Older comments"
+msgstr "&larr; Vanhemmat kommentit"
+
+#: comments.php:34
+msgid "Newer comments &rarr;"
+msgstr "Uudemmat kommentit &rarr;"
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: content-page.php:13
+msgid "Pages:"
+msgstr "Sivut:"
+
+#: footer.php:38
+msgid "Product added to cart!"
+msgstr "Tuote lisätty ostoskoriin!"
+
+#: footer.php:39
+msgid "View Cart"
+msgstr "Näytä ostoskori"
+
+#: footer.php:58
+msgid "Menu"
+msgstr "Valikko"
+
+#: footer.php:82
+msgid "Categories"
+msgstr "Tuoteryhmät"
+
+#: footer.php:93 header.php:96
+#: inc/theme-partials/headers/header-bottom-menu.php:20
+#: inc/theme-partials/headers/header-bottom-menu.php:56
+#: inc/theme-partials/headers/header-default.php:26
+msgid "Search"
+msgstr "Haku"
+
+#: footer.php:102 header.php:101
+#: inc/theme-partials/headers/header-bottom-menu.php:25
+#: inc/theme-partials/headers/header-bottom-menu.php:61
+#: inc/theme-partials/headers/header-default.php:31
+msgid "Cart"
+msgstr "Ostoskori"
+
+#: footer.php:113
+msgid "Languages"
+msgstr "Kielet"
+
+#: footer.php:124
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: search.php:39
+msgid "No search results"
+msgstr "Ei hakutuloksia"
+
+#: search.php:40
+msgid ""
+"Unfortunately we could not find what you were looking for. Please try to "
+"search with different keywords:"
+msgstr "Emme valitettavasti löytäneet hakemaasi. Kokeile eri hakusanoilla:"
+
+#: functions.php:59
+msgid "Primary Menu"
+msgstr "Päävalikko"
+
+#. If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own language.
+#: functions.php:275
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "on"
+
+#. To add an additional Source Sans Pro character subset specific to your language, translate
+#. this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your own language.
+#: functions.php:280
+msgctxt "Source Sans Pro font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr "ei-alavalintaa"
+
+#: functions.php:324
+msgid "Main Sidebar"
+msgstr "Päävimpainalue"
+
+#: functions.php:326
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr "Näytetään muilla sivuilla paitsi etusivulla."
+
+#: functions.php:334
+msgid "Custom mobile menu widgets"
+msgstr "Mukautetut mobiilimenu vimpaimet"
+
+#: functions.php:344
+msgid "Woocommerce"
+msgstr "Woocommerce"
+
+#: functions.php:346
+msgid "Sidebar for Woocommerce shop"
+msgstr "WooCommerce kaupan sivupalkki"
+
+#: functions.php:354
+msgid "Minicart"
+msgstr "Ostoskori"
+
+#: functions.php:356
+msgid "Minicart Widget. Requires widget to be installed."
+msgstr "Ostoskori vimpain"
+
+#: functions.php:364
+msgid "Top Header Area, Left Side"
+msgstr "Yläheader, vasen reuna"
+
+#: functions.php:366
+msgid "Content for the Left Side of the Top Header Area."
+msgstr "Vasemman puoleiseen yläheader alueen sisältö"
+
+#: functions.php:374
+msgid "Top Header Area, Right Side Area One"
+msgstr "Yläheader, Oikea alue 1"
+
+#: functions.php:376
+msgid "Content for the Right Side Area One of the Top Header Area."
+msgstr "Oikean yläheader alueen sisältö, alue 1"
+
+#: functions.php:384
+msgid "Top Header Area, Right Side Area Two"
+msgstr "Yläheader, Oikea alue 2"
+
+#: functions.php:386
+msgid "Content for the Right Side Area Two of the Top Header Area."
+msgstr "Oikean yläheader alueen sisältö, alue 2"
+
+#: functions.php:434
+msgid "First of the Footer Areas"
+msgstr "Ensimmäinen Footer Alue"
+
+#: functions.php:436 functions.php:446 functions.php:456 functions.php:466
+msgid "Use this to place widgets on your footer."
+msgstr "Käytä asettaaksesi vimpaimen footeriin."
+
+#: functions.php:444
+msgid "Second of the Footer Areas"
+msgstr "Toinen Footer Alue"
+
+#: functions.php:454
+msgid "Third of the Footer Areas"
+msgstr "Kolmas Footer Alue"
+
+#: functions.php:464
+msgid "Fourth of the Footer Areas"
+msgstr "Neljäs Footer Alue"
+
+#: functions.php:474
+msgid "Bottom Footer Area, Right Side"
+msgstr "Ala Footer Alue, Oikea reuna"
+
+#: functions.php:476
+msgid "Right side of the Bottom Footer Area"
+msgstr "Ala Footer alueen oikea reuna"
+
+#: functions.php:524
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:524
+msgid "(Edit)"
+msgstr "(Muokkaa)"
+
+#: functions.php:539
+msgid "Post author"
+msgstr "Julkaisija"
+
+#. 1: date, 2: time
+#: functions.php:545
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s : %2$s"
+
+#: functions.php:551
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa hyväksyntää."
+
+#: functions.php:556
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: functions.php:560
+msgid "Reply"
+msgstr "Vastaa"
+
+#. used between list items, there is a space after the comma.
+#: functions.php:592
+#, php-format
+msgid "View all posts by %s"
+msgstr "Näytä kaikki artikkelit julkaisijalta %s"
+
+#. 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
+#: functions.php:598
+#, php-format
+msgid ""
+"Published %1$s by tag %2$s, %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+"Julkaistu tagilla %2$s kategoriassa %1$s, %3$s<span class=\"by-author\"> by "
+"%4$s</span>."
+
+#: functions.php:600
+#, php-format
+msgid "Published %1$s, %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Julkaissut %1$s, %3$s<span class=\"by-author\"> %4$s</span>."
+
+#: functions.php:602
+#, php-format
+msgid "Published %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Julkaissut %3$s<span class=\"by-author\"> %4$s</span>."
+
+#: functions.php:685
+msgid "Archive category: "
+msgstr "Arkisto kategoria:"
+
+#: functions.php:688
+msgid "Search results: "
+msgstr "Hakutulokset:"
+
+#: functions.php:748
+msgid "Articles with tag name: "
+msgstr "Artikkeli tagilla:"
+
+#: functions.php:753
+msgid "Articles published by: "
+msgstr "Julkaissut:"
+
+#: functions.php:756
+msgid "Virhe 404"
+msgstr "Virhe 404"
+
+#: functions.php:1140
+msgid "View Product"
+msgstr "Näytä tuote"
+
+#: functions.php:1155
+msgid "Buy Now"
+msgstr "Osta heti"
+
+#: functions.php:1382
+msgid "Please enter your search query here..."
+msgstr "Haku"
+
+#: functions.php:1403
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuutti"
+msgstr[1] "%d minuuttia"
+
+#: functions.php:1549
+msgid "Choose mega menu"
+msgstr "Valitse megamenu"
+
+#: 404.php:19 inc/theme-partials/subheaders/subheader-default.php:3
+msgid "Error 404"
+msgstr "Virhe 404"
+
+#: 404.php:21
+msgid ""
+"Unofortunately we could not find what you were looking for. Please try to "
+"use search:"
+msgstr "Emme valitettavasti löytäneet etsimääsi sivua. Kokeile hakua:"
+
+#: author.php:28
+#, php-format
+msgid "Archives: %s"
+msgstr "Arkistot: %s"
+
+#: author.php:60
+#, php-format
+msgid "Author info %s"
+msgstr "Julkaisijan tiedot %s"
+
+#: content-none.php:12 inc/theme-partials/subheaders/subheader-default.php:29
+msgid "No results"
+msgstr "Ei sisältöä"
+
+#: content-none.php:15
+msgid ""
+"Unfortunately we could not find what you were searching for. Try to search "
+"with different keywords:"
+msgstr "Emme valitettavasti löytäneet hakemaasi. Kokeile eri hakusanoilla:"
+
+#. Name of the template
+msgid "Footer Layout"
+msgstr "Footer ulkoasu"
+
+#. Name of the template
+msgid "Mega Menu Layout"
+msgstr "Megamenun ulkoasu"
+
+#. Name of the template
+msgid "Wrapped Layout"
+msgstr "Rajattu asettelu"
+
+#: inc/theme-partials/blog/grid.php:57 inc/theme-partials/blog/full.php:37
+msgid "Read more"
+msgstr "Lue lisää"
+
+#: inc/theme-partials/blog/grid.php:66 inc/theme-partials/blog/meta.php:19
+msgid "0"
+msgstr "0"
+
+#: inc/theme-partials/blog/grid.php:66 inc/theme-partials/blog/meta.php:19
+msgid "1"
+msgstr "1"
+
+#: inc/theme-partials/blog/grid.php:66 inc/theme-partials/blog/meta.php:19
+msgid "%"
+msgstr "%"
+
+#: inc/theme-partials/subheaders/subheader-default.php:27
+msgid "Search results"
+msgstr "Hakutulokset"
+
+#: inc/customizer-custom-controls/inc/custom-controls.php:378
+msgid "Add"
+msgstr "Lisää"
+
+#: inc/customizer-custom-controls/inc/custom-controls.php:710
+msgid "Select weight & style for regular text"
+msgstr "Valitse kappaletekstin paksuus ja tyyli"
+
+#. Name of the theme
+msgid "Aphelion"
+msgstr "Aphelion"
+
+#. Description of the theme
+msgid "Aphelion WordPress Theme."
+msgstr "Aphelion WordPress Teema."
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://web-data.online/"
+msgstr "https://web-data.online/"
+
+#. Author of the theme
+msgid "Web-Data.Online"
+msgstr "Web-Data.Online"
