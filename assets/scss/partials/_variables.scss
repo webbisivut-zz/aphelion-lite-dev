@@ -5,6 +5,8 @@
 
 $theme-default-width: 1366px;
 $logo_width: 200px;
+$mobile_breakpoint: 768px;
+$mobile_sm_breakpoint: 567px;
 
 /*--------------------------------------------------------------
 # Colors
@@ -41,6 +43,14 @@ $heading-color-h3: #333333;
 $heading-color-h4: #8acc1b;
 $heading-color-h5: #8acc1b;
 $heading-color-h6: #222222;
+
+/* Mobile Menu */
+$hamburger-color: #222222;
+
+/* Overlay */
+$wb_aphelion_overlay-bg: rgba(0,0,0,0.9);
+$wb_aphelion_overlay-bg-menu-open: rgba(0,0,0,0.6);
+$wb_aphelion_overlay-link-color: #ffffff;
 
 /*--------------------------------------------------------------
 # Fonts

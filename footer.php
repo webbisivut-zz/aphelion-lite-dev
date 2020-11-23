@@ -77,6 +77,39 @@
 	</div>
 </div> 
 
+<div id="wb_aphelion_overlay_menu_is_open"></div>
+
+<div class="wb_aphelion_overlay wb_aphelion_overlay-slidedown">
+	<div class="wb_aphelion_overlay-wrap-main-menu">
+		<div class="wb_aphelion_overlay-navigation-header-wrap"></div>
+		
+		<div id="wb_aphelion_overlay-close" class="wb_aphelion_overlay-right-menu-item">X</div>
+
+		<ul id="wb_aphelion_overlay-container">
+			<li class="wb_aphelion_overlay-container-item" id="wb_aphelion_overlay-container-menu">
+				<div class="wb_aphelion_overlay-navigation-wrap">
+					<nav class="wb_aphelion_overlay-navigation" role="navigation">
+						<?php 
+							$menu = wp_nav_menu(
+								array (
+									'theme_location' => 'aphelion-mobile-menu',
+									'echo' => FALSE,
+									'fallback_cb' => '__return_false'
+								)
+							);
+							
+							if ( ! empty ( $menu ) ) {
+								wp_nav_menu( array( 'menu' => 'aphelion-mobile-menu', 'container_class' => 'aphelion_mobile_menu', 'menu_id' => 'wb_aphelion_overlay_menu'  ) );
+							} else {
+								wp_nav_menu( array( 'menu' => 'primary', 'menu_id' => 'wb_aphelion_overlay_menu' ) ); 
+							}
+						?>
+					</nav>
+				</div>
+			</li>
+		</ul>
+	</div>
+
 <?php wp_footer(); ?>
 
 </body>

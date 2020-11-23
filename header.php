@@ -43,9 +43,17 @@
 			</div>
 
 			<div id="aphelion_header_right">
-				<nav id="wb_aphelion_site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'wb_aphelion_menu-class', 'menu_id' => 'aphelion-menu-id' ) ); ?>									
-				</nav>
+				<div id="aphelion_desktop_menu_wrapper">
+					<nav id="wb_aphelion_site-navigation" class="main-navigation" role="navigation">
+						<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'wb_aphelion_menu-class', 'menu_id' => 'aphelion-menu-id' ) ); ?>									
+					</nav>
+				</div>
+
+				<div id="aphelion_mobile_menu_wrapper">
+					<div id="trigger-wb_aphelion_overlay" class="wb_aphelion_hamburger-trigger" type="button">
+						<div class="wb_aphelion_hamburger-box"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header><!-- #aphelion_header -->

@@ -226,8 +226,11 @@ function aphelion_lite_scripts() {
 
 	wp_enqueue_script('jquery');
 
+	wp_enqueue_script( 'modernizr-custom-js', get_template_directory_uri() . '/assets/js/modernizr.custom.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/assets/js/classie.min.js', array(), _S_VERSION, true );
+
 	if(_SHOW_STICKY_HEADER) {
-		wp_enqueue_script( 'aphelion-lite-default-js', get_template_directory_uri() . '/assets/js/defaults.min.js', array(), _S_VERSION, true );
+		wp_enqueue_script( 'aphelion-lite-default-js', get_template_directory_uri() . '/assets/js/defaults.min.js', array(), _S_VERSION, true );	
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
