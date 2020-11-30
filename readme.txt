@@ -10,7 +10,12 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Aphelion Lite.
+A starter theme called Aphelion Lite. This is a modified version of Underscores theme. This theme adds following features to the Underscores starter theme:
+- Customizable header (including topheader and sticky header)
+- Mobile menu
+- Grid system based on Twitter's Bootstrap
+
+Create your own theme based on this, or use child theme instead to do your own modifications.
 
 == Description ==
 
@@ -22,15 +27,9 @@ Description
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-Aphelion Lite includes support for WooCommerce.
-
 == Changelog ==
 
-= 1.0 - Dec 01 2020 =
+= 1.0 - 30.11.2020 =
 * Initial release
 
 == Credits ==
