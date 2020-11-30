@@ -17,10 +17,6 @@ A starter theme called Aphelion Lite. This is a modified version of Underscores 
 
 Create your own theme based on this, or use child theme instead to do your own modifications.
 
-== Description ==
-
-Description
-
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
