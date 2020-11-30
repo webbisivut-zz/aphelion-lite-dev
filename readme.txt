@@ -12,6 +12,7 @@ License URI: LICENSE
 
 A starter theme called Aphelion Lite. This is a modified version of Underscores theme. This theme adds following features to the Underscores starter theme:
 - Customizable header (including topheader and sticky header)
+- Customizable footer section with widgets
 - Mobile menu
 - Grid system based on Twitter's Bootstrap
 
