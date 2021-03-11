@@ -1297,11 +1297,6 @@ ul#wb_aphelion_overlay_menu li a {
   display: block;
 }
 
-.wb_aphelion_footer_inner_wrap {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
 .wb_aphelion_footer_item_bottom_left, #wb_aphelion_copyright a:link, #wb_aphelion_copyright a:hover, #wb_aphelion_copyright a:visited {
   color: #f6f5f5;
 }
