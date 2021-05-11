@@ -4,17 +4,16 @@ Contributors: WebData Oy
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 5.7.1
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
 A starter theme called Aphelion Lite. This is a modified version of Underscores theme. This theme adds following features to the Underscores starter theme:
-- Customizable header (including topheader, subheader and sticky header)
+- Customizable header (including topheader and sticky header)
 - Customizable footer section with widgets
 - Mobile menu
-- Sticky mobile footer
 - Grid system based on Twitter's Bootstrap
 
 Create your own theme based on this, or use child theme instead to do your own modifications.
@@ -27,12 +26,10 @@ Create your own theme based on this, or use child theme instead to do your own m
 
 == Changelog ==
 
-= 1.1 - 11.05.2021 =
-* Sticky mobile footer
-* Subheader
+= 1.1.1 - 11.03.2021 =
 * Minor PHP and CSS fixes
 
-= 1.0.1 - 11.03.2021 =
+= 1.1 - 11.03.2021 =
 * Minor PHP and CSS fixes
 * Changed default width to 1440px
 

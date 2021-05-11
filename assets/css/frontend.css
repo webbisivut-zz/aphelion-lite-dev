@@ -2381,6 +2381,7 @@ textarea {
 --------------------------------------------- */
 .not-found {
   padding: 40px 0px 60px 0px;
+  text-align: center;
 }
 
 /* Widgets
