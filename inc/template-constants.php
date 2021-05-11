@@ -49,3 +49,7 @@ if ( ! defined( '_FOOTER_COLUMNS' ) ) {
 if ( ! defined( '_FOOTER_COPYRIGHT_TEXT' ) ) {
 	define( '_FOOTER_COPYRIGHT_TEXT', '&copy; Copyright Aphelion Lite' );
 }
+
+if ( ! defined( '_MOBILE_FOOTER' ) ) {
+	define( '_MOBILE_FOOTER', true );
+}

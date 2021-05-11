@@ -15,6 +15,47 @@
 </div><!-- #aphelion_content_wrapper -->
 </div><!-- #aphelion_page -->
 
+<?php if( _MOBILE_FOOTER ) { ?>
+	<div id="wb_aphelion_mobile_search">
+		<div id="close_mobile_search"><img src="<?php echo get_template_directory_uri() . '/assets/img/close.svg' ?>"></div>
+		
+		<div class="wb_aphelion_mobile_footer_content_container">
+			<form id="searchform_mobile" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<input type="text" id="wb_aphelion_header_search_input_mobile" name="s" placeholder="Haku" value="<?php echo get_search_query(); ?>">
+				<input type="submit" value="Hae" class="search_submit_mobile">
+			</form>
+		</div>
+	</div>
+
+	<div id="wb_aphelion_mobile_cart">
+		<div id="close_mobile_cart"><img src="<?php echo get_template_directory_uri() . '/assets/img/close.svg' ?>"></div>
+		
+		<div class="wb_aphelion_mobile_footer_content_container">	
+			<div id="wb_aphelion_mobile_cart_container"><?php if(function_exists('woocommerce_mini_cart')) woocommerce_mini_cart() ?></div>
+		</div>
+	</div>
+
+	<div id="wb_aphelion_sticky_mobile_footer">
+		<div class="wb_aphelion_sticky_mobile_item" id="wb_aphelion_sticky_mobile_cart">
+			<div id="wb_aphelion_footer_cart">
+				<div id="wb_aphelion_cart_widget_totals_outer_wrap">
+					<div id="wb_aphelion_cart_widget_totals_inner_wrap">
+						<div id="wb_aphelion_cart_widget_totals_sum">
+							<?php
+								global $woocommerce;
+								echo $woocommerce->cart->cart_contents_count;
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wb_aphelion_sticky_mobile_item" id="wb_aphelion_sticky_mobile_search">
+			<div id="wb_aphelion_footer_search"></div>
+		</div>
+	</div>
+<?php } // end if ?>
+
 <div id="wb_aphelion_footer_content_wrap">
 	<footer id="wb_aphelion_footer_wrap">
 		<div id="wb_aphelion_footer_inner_wrap">

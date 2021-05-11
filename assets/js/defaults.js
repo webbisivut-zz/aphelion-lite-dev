@@ -138,4 +138,68 @@ jQuery(document).ready(function($) {
             listMenuElements[i].style.display = 'none';
         }
     }
+
+    function aphelion_mobile_footer_contents() {
+        // Mobile search
+        if(document.getElementById('wb_aphelion_sticky_mobile_search') && document.getElementById('wb_aphelion_mobile_search')) {
+            let open_mobile_search = document.getElementById('wb_aphelion_sticky_mobile_search');
+            let mobile_search_content = document.getElementById('wb_aphelion_mobile_search');
+            let mobile_cart_content = document.getElementById('wb_aphelion_mobile_cart');
+
+            open_mobile_search.addEventListener('click', () => {
+                if(mobile_search_content.style.opacity == 0) {
+                    mobile_search_content.style.opacity = 1;
+                    mobile_search_content.style.zIndex = 997; 
+                } else {
+                    mobile_search_content.style.opacity = 0;
+                    mobile_search_content.style.zIndex = -999; 
+                }    
+                
+                mobile_cart_content.style.opacity = 0;
+                mobile_cart_content.style.zIndex = -999;
+            });
+        }
+
+        if(document.getElementById('close_mobile_search') && document.getElementById('wb_aphelion_mobile_search')) {
+            let close_mobile_search = document.getElementById('close_mobile_search');
+            let mobile_search_content = document.getElementById('wb_aphelion_mobile_search');
+
+            close_mobile_search.addEventListener('click', () => {
+                mobile_search_content.style.opacity = 0;
+                mobile_search_content.style.zIndex = -999;
+            });
+        }
+
+        // Mobile cart
+        if(document.getElementById('wb_aphelion_sticky_mobile_cart') && document.getElementById('wb_aphelion_mobile_cart')) {
+            let open_mobile_cart = document.getElementById('wb_aphelion_sticky_mobile_cart');
+            let mobile_cart_content = document.getElementById('wb_aphelion_mobile_cart');
+            let mobile_search_content = document.getElementById('wb_aphelion_mobile_search');
+
+            open_mobile_cart.addEventListener('click', () => {
+                if(mobile_cart_content.style.opacity == 0) {
+                    mobile_cart_content.style.opacity = 1;
+                    mobile_cart_content.style.zIndex = 997;
+                } else {
+                    mobile_cart_content.style.opacity = 0;
+                    mobile_cart_content.style.zIndex = -999;
+                }
+
+                mobile_search_content.style.opacity = 0;
+                mobile_search_content.style.zIndex = -999;
+            });
+        }
+
+        if(document.getElementById('close_mobile_cart') && document.getElementById('wb_aphelion_mobile_cart')) {
+            let close_mobile_cart = document.getElementById('close_mobile_cart');
+            let mobile_cart_content = document.getElementById('wb_aphelion_mobile_cart');
+
+            close_mobile_cart.addEventListener('click', () => {
+                mobile_cart_content.style.opacity = 0;
+                mobile_cart_content.style.zIndex = -999;
+            });
+        }
+    }
+
+    aphelion_mobile_footer_contents();
 });
