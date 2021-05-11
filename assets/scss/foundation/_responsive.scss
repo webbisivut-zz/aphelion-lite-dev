@@ -121,12 +121,14 @@
     }
     
     #wb_aphelion_footer_cart {
-        background: url('../img/cart.svg');
+        background: url('../img/cart.svg') no-repeat;
         margin-right: 10px;
+        background-size: cover;
     }
     
     #wb_aphelion_footer_search {
-        background: url('../img/search.svg');
+        background: url('../img/search.svg') no-repeat;
+        background-size: cover;
     }
     
     #wb_aphelion_cart_widget_totals_outer_wrap {
