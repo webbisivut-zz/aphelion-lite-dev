@@ -29,9 +29,9 @@ if ( post_password_required() )
 		</ol><!-- .commentlist -->
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="navigation" role="navigation">
-			<h1 class="assistive-text section-heading"><?php _e( 'Comments navigation', 'aphelion' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( _e( '&larr; Older comments', 'aphelion' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( _e( 'Newer comments &rarr;', 'aphelion' ) ); ?></div>
+			<h1 class="assistive-text section-heading"><?php _e( 'Kommentit', 'aphelion' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( _e( '&larr; Vanhemmat kommentit', 'aphelion' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( _e( 'Uudemmat kommentit &rarr;', 'aphelion' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 		<?php
@@ -39,7 +39,7 @@ if ( post_password_required() )
 		 * But we only want the note on posts and pages that had comments in the first place.
 		 */
 		if ( ! comments_open() && get_comments_number() ) : ?>
-		<p class="nocomments"><?php _e( 'Comments are closed.' , 'aphelion' ); ?></p>
+		<p class="nocomments"><?php _e( 'Kommentit eivät ole käytössä.' , 'aphelion' ); ?></p>
 		<?php endif; ?>
 	<?php endif; // have_comments() ?>
 	<?php comment_form(); ?>

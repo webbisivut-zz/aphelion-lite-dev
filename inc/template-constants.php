@@ -38,6 +38,10 @@ if ( ! defined( '_SHOW_STICKY_HEADER' ) ) {
 	define( '_SHOW_STICKY_HEADER', true );
 }
 
+if ( ! defined( '_SHOW_SUB_HEADER' ) ) {
+	define( '_SHOW_SUB_HEADER', true );
+}
+
 if ( ! defined( '_FOOTER_COLUMNS' ) ) {
 	define( '_FOOTER_COLUMNS', 4 );
 }

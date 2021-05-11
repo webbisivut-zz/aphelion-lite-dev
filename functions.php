@@ -132,7 +132,7 @@ if ( ! function_exists( 'aphelion_comment' ) ) {
 			// Display trackbacks differently than normal comments.
 		?>
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-			<p><?php _e( 'Pingback:', 'aphelion' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( _e( '(Edit)', 'aphelion' ), '<span class="edit-link">', '</span>' ); ?></p>
+			<p><?php _e( 'Pingback:', 'aphelion' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( _e( '(Muokkaa)', 'aphelion' ), '<span class="edit-link">', '</span>' ); ?></p>
 		<?php
 				break;
 			default :
@@ -147,7 +147,7 @@ if ( ! function_exists( 'aphelion_comment' ) ) {
 						printf( '<cite class="fn">%1$s %2$s</cite>',
 							get_comment_author_link(),
 							// If current post author is also comment author, make it known visually.
-							( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'aphelion' ) . '</span>' : ''
+							( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Julkaissut ', 'aphelion' ) . '</span>' : ''
 						);
 						printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
 							esc_url( get_comment_link( $comment->comment_ID ) ),
@@ -159,16 +159,16 @@ if ( ! function_exists( 'aphelion_comment' ) ) {
 				</header><!-- .comment-meta -->
 	
 				<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'aphelion' ); ?></p>
+					<p class="comment-awaiting-moderation"><?php _e( 'Kommentti odottaa vahvistusta.', 'aphelion' ); ?></p>
 				<?php endif; ?>
 	
 				<section class="comment-content comment">
 					<?php comment_text(); ?>
-					<?php edit_comment_link( _e( 'Edit', 'aphelion' ), '<p class="edit-link">', '</p>' ); ?>
+					<?php edit_comment_link( _e( 'Muokkaa', 'aphelion' ), '<p class="edit-link">', '</p>' ); ?>
 				</section><!-- .comment-content -->
 	
 				<div class="reply">
-					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => _e( 'Reply', 'aphelion' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => _e( 'Vastaa', 'aphelion' ), 'after' => ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		<?php

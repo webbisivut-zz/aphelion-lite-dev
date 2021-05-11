@@ -81,3 +81,18 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+/*--------------------------------------------------------------
+# Sub header
+--------------------------------------------------------------*/
+#aphelion_sub_header {
+    padding: 20px 0px;
+    background: $quinary-color;
+    color: $secondary-color;
+    text-align: center;
+    margin: 0 0 35px 0;
+
+    h2.sub_header_h2 {
+        color: $secondary-color;
+    }
+}
