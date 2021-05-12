@@ -20,7 +20,7 @@ $col_class = _MAIN_SIDEBAR_ACTIVE ? 'wb-aphelion-col-md-8' : 'wb-aphelion-col-md
 					<h1 class="page-title">
 						<?php
 						/* translators: %s: search query. */
-						printf( esc_html__( 'Search Results for: %s', 'aphelion-lite' ), '<span>' . get_search_query() . '</span>' );
+						printf( esc_html__( 'Hakutulokset kyselylle: %s', 'aphelion-lite' ), '<span>' . get_search_query() . '</span>' );
 						?>
 					</h1>
 				</header><!-- .page-header -->
