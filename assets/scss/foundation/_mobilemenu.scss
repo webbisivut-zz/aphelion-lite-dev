@@ -223,12 +223,9 @@ ul#wb_aphelion_overlay_menu li a {
 	display: block;
 	height: 50px;
 	width: 50px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	line-height: 45px; 
 	transition: all .2s ease-in-out;
 }
