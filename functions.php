@@ -294,6 +294,10 @@ function aphelion_lite_scripts() {
 	wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/assets/js/classie.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'aphelion-lite-default-js', get_template_directory_uri() . '/assets/js/defaults.min.js', array(), _S_VERSION, true );
 
+	if(_LOAD_MINICART_AJAX) {
+		wp_enqueue_script( 'add-to-cart-js', get_stylesheet_directory_uri() . '/assets/js/add_to_cart_ajax.min.js', array(), '1.0.0', false  );
+	}
+
 	if(_SHOW_STICKY_HEADER) {
 		wp_enqueue_script( 'aphelion-lite-sticky-js', get_template_directory_uri() . '/assets/js/sticky-header.min.js', array(), _S_VERSION, true );
 	}
