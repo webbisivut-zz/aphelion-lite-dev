@@ -7,17 +7,31 @@ jQuery(document).ready(function($) {
         var variation_id = '';
         var quantity = 1;
 
-        if($thisbutton.attr('id')) {
-            var id = $thisbutton.attr('id').replace('single_add_to_cart_button_', '')
-            var product_id = id
-        }
+        var product_id = $form.find('button[name=add-to-cart]').val();
 
         if(!product_id) {
             product_id = $form.find('input[name=product_id]').val();
         }
-        
-        variation_id = $form.find('input[name=variation_id]').val();
-        quantity = $form.find('input[name=quantity]').val();
+
+        if($form.find('input[name=variation_id]')) {
+            variation_id = $form.find('input[name=variation_id]').val();
+        }
+
+        if($form.find('input[name=quantity]')) {
+            quantity = $form.find('input[name=quantity]').val();
+        }
+
+        if(!variation_id) {
+            variation_id = '';
+        }
+
+        if(!quantity) {
+            quantity = 1;
+        }
+
+        console.log(product_id)
+        console.log(variation_id)
+        console.log(quantity)
 
         var data = {
                 action: 'ql_woocommerce_ajax_add_to_cart',

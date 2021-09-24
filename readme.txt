@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.8.1
 Requires PHP: 5.6
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -26,7 +26,7 @@ Create your own theme based on this, or use child theme instead to do your own m
 
 == Changelog ==
 
-= 1.1.3 - 24.09.2021 =
+= 1.1.4 - 24.09.2021 =
 * Added minicart ajax option
 
 = 1.1.2 - 12.05.2021 =
