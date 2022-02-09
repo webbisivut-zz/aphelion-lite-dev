@@ -25,9 +25,6 @@
 		the_content();
 
 		?>
-		<div class="aphelion_grid_blog_view_post">
-            <a class="aphelion_grid_blog_view_post_link" href="<?php the_permalink('') ?>"><?php _e('Read more','aphelion'); ?></a>
-		</div>
 		<?php
 
 		wp_link_pages(
