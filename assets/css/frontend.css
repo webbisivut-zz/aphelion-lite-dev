@@ -1000,6 +1000,7 @@ select.wpcf7-select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: -15px;
 }
 
 .wb_aphelion_header_right_slide_menu {

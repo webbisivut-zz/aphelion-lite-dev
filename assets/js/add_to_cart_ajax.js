@@ -29,17 +29,14 @@ jQuery(document).ready(function($) {
             quantity = 1;
         }
 
-        console.log(product_id)
-        console.log(variation_id)
-        console.log(quantity)
-
         var data = {
                 action: 'ql_woocommerce_ajax_add_to_cart',
                 product_id: product_id,
                 product_sku: '',
                 quantity: quantity,
                 variation_id: variation_id,
-            };
+        };
+        
         $.ajax({
                 type: 'post',
                 url: wc_add_to_cart_params.ajax_url,
