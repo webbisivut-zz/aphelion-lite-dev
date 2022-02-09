@@ -22,7 +22,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_excerpt();
+		the_content();
 
 		?>
 		<div class="aphelion_grid_blog_view_post">
