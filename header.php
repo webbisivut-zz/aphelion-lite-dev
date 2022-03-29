@@ -25,19 +25,19 @@
 <div id="aphelion_page" class="site">
 	<?php if(_SHOW_STICKY_HEADER) { ?> 
 		<div class="wb_aphelion_sticky-header" id="wb_aphelion_sticky-header">
-			<div id="aphelion_header_inner_wrapper_sticky">
-				<div id="aphelion_header_left">
+			<div class="aphelion_header_inner_wrapper_sticky">
+				<div class="aphelion_header_left">
 					<a href="<?php echo esc_url( home_url() ); ?>/"><img src="<?php header_image(); ?>" alt="logo" /></a>
 				</div>
 
-				<div id="aphelion_header_right">
-					<div id="aphelion_desktop_menu_wrapper">
+				<div class="aphelion_header_right">
+					<div class="aphelion_desktop_menu_wrapper">
 						<nav id="wb_aphelion_site-navigation" class="main-navigation" role="navigation">
 							<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'wb_aphelion_menu-class', 'menu_id' => 'aphelion-menu-id' ) ); ?>									
 						</nav>
 					</div>
 
-					<div id="aphelion_mobile_menu_wrapper_sticky">
+					<div class="aphelion_mobile_menu_wrapper_sticky">
 						<div id="trigger-wb_aphelion_overlay_sticky" class="wb_aphelion_hamburger-trigger" type="button">
 							<div class="wb_aphelion_hamburger-box"></div>
 						</div>
@@ -62,18 +62,18 @@
 
 	<header id="aphelion_header" class="site-header">		
 		<div class="aphelion_header_inner_wrapper">
-			<div id="aphelion_header_left">
+			<div class="aphelion_header_left">
 				<a href="<?php echo esc_url( home_url() ); ?>/"><img src="<?php header_image(); ?>" alt="logo" /></a>
 			</div>
 
-			<div id="aphelion_header_right">
-				<div id="aphelion_desktop_menu_wrapper">
+			<div class="aphelion_header_right">
+				<div class="aphelion_desktop_menu_wrapper">
 					<nav id="wb_aphelion_site-navigation" class="main-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_class' => 'wb_aphelion_menu-class', 'menu_id' => 'aphelion-menu-id' ) ); ?>									
 					</nav>
 				</div>
 
-				<div id="aphelion_mobile_menu_wrapper">
+				<div class="aphelion_mobile_menu_wrapper">
 					<div id="trigger-wb_aphelion_overlay" class="wb_aphelion_hamburger-trigger" type="button">
 						<div class="wb_aphelion_hamburger-box"></div>
 					</div>

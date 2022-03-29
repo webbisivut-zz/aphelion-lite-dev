@@ -38,12 +38,16 @@
 	<div id="wb_aphelion_sticky_mobile_footer">
 		<div class="wb_aphelion_sticky_mobile_item" id="wb_aphelion_sticky_mobile_cart">
 			<div id="wb_aphelion_footer_cart">
-				<div id="wb_aphelion_cart_widget_totals_outer_wrap">
-					<div id="wb_aphelion_cart_widget_totals_inner_wrap">
-						<div id="wb_aphelion_cart_widget_totals_sum">
+				<div class="wb_aphelion_cart_widget_totals_outer_wrap">
+					<div class="wb_aphelion_cart_widget_totals_inner_wrap">
+						<div class="wb_aphelion_cart_widget_totals_sum">
 							<?php
 								global $woocommerce;
-								echo $woocommerce->cart->cart_contents_count;
+								if(isset($woocommerce->cart)) {
+									echo $woocommerce->cart->cart_contents_count;
+								} else {
+									echo 0;
+								}
 							?>
 						</div>
 					</div>
@@ -58,7 +62,7 @@
 
 <div id="wb_aphelion_footer_content_wrap">
 	<footer id="wb_aphelion_footer_wrap">
-		<div id="wb_aphelion_footer_inner_wrap">
+		<div class="wb_aphelion_footer_inner_wrap">
 		<?php if( _FOOTER_COLUMNS == 2 ) { ?>
 			<div class="container-fluid">  
 				<div class="row"> 
@@ -124,7 +128,7 @@
 	<div class="wb_aphelion_overlay-wrap-main-menu">
 		<div class="wb_aphelion_overlay-navigation-header-wrap"></div>
 		
-		<div id="wb_aphelion_overlay-close" class="wb_aphelion_overlay-right-menu-item">X</div>
+		<div id="wb_aphelion_overlay-close" class="wb_aphelion_overlay-right-menu-item"><img src="<?php echo get_template_directory_uri() . '/assets/img/close.svg' ?>"></div>
 
 		<ul id="wb_aphelion_overlay-container">
 			<li class="wb_aphelion_overlay-container-item" id="wb_aphelion_overlay-container-menu">

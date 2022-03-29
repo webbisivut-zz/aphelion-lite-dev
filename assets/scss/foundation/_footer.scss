@@ -21,12 +21,13 @@
 	padding: 80px 0px 60px 0px;
 	overflow: hidden;
 	letter-spacing: 0.8px;
+	
+	.wb_aphelion_footer_inner_wrap {
+		max-width: $theme-default-width;
+		margin: 0 auto;
+	}
 }
 
-#wb_aphelion_footer_inner_wrap {
-	max-width: $theme-default-width;
-	margin: 0 auto;
-}
 
 #wb_aphelion_copyright p {
 	text-align: center;

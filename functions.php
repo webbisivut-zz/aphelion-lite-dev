@@ -188,30 +188,6 @@ if ( ! function_exists( 'aphelion_comment' ) ) {
 function aphelion_lite_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Top header left', 'aphelion-lite' ),
-			'id'            => 'sidebar-top-left',
-			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Top header right', 'aphelion-lite' ),
-			'id'            => 'sidebar-top-right',
-			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
-
-	register_sidebar(
-		array(
 			'name'          => esc_html__( 'Sidebar', 'aphelion-lite' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
@@ -226,6 +202,30 @@ function aphelion_lite_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar for pages', 'aphelion-lite' ),
 			'id'            => 'sidebar-page',
+			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Top header left', 'aphelion-lite' ),
+			'id'            => 'sidebar-top-left',
+			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Top header right', 'aphelion-lite' ),
+			'id'            => 'sidebar-top-right',
 			'description'   => esc_html__( 'Add widgets here.', 'aphelion-lite' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
